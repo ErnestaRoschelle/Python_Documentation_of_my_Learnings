@@ -1,0 +1,54 @@
+FOR LOOP
+
+expenses = [1000,500,2000,3000]
+
+total_expense = 0
+for abc in expenses:
+    total_expense= total_expense + abc
+print(total_expense)
+
+------------------------------------
+expenses = [1000,500,2000,3000]
+
+total_expense=0
+for i in range(len(expenses)):
+    expense = expenses[i]
+    print(f"month {i+1},expenses are {expense}")
+    total_expense=expense + total_expense
+
+print(f"total expense is {total_expense}")
+
+         OR
+
+expenses = [1000,500,2000,3000]
+
+total_expense=0
+for i ,expense in enumerate(expenses):
+    print(f"month {i+1},expenses are {expense}")
+    total_expense=expense + total_expense
+
+print(f"total expense is {total_expense}")
+
+OUTPUT
+month 1,expenses are 1000
+month 2,expenses are 500
+month 3,expenses are 2000
+month 4,expenses are 3000
+total expense is 6500
+--------------------------------------------
+
+monthly_sales = [42,38,33,38,40,45]
+
+thresold = 40
+
+for sales in monthly_sales:
+     if sales < thresold:
+         print (f"{sales} is lesser than target_value")
+         break
+     else:
+         print(f"{sales} is greater than target_value")
+
+OUTPUT
+42 is greater than target_value
+38 is lesser than target_value
+-----------------------------------------
