@@ -1,0 +1,39 @@
+SESSION 1 - IF CONDITION
+
+PYCHARM
+
+n=int(input("enter a number ->"))
+
+message="number is even" if n%2==0 else "number is odd"
+print(message)  
+
+
+------------------------------------------------------------
+
+
+n=int(input("enter a number ->"))
+
+if n%2==0:
+    print (f"{n} number is even")
+else:
+    print(f"{n} number is odd")
+
+indian = {'naan','butter chicken','mango lassi'}
+italian = {'pasta','alfredo','fettucine'}
+chinese = {'noodles','pot stickers','hot soup'}
+
+
+-------------------------------------------------------------
+
+
+n=input("enter food->")
+
+if n in indian:
+    print(f"indian cuisine")
+elif n in italian:
+    print(f"italian cuisine")
+elif n in chinese:
+    print(f"chinese cuisine")
+else:
+    print(f"Don't know")
+
